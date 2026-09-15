@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 어비스펄 제작법 -->
+	<RecipeDef>
+		<defName>MoyoLA_Make_AbyssPearl</defName>
+		<label>Synthesizes Abyssal Pearl</label>
+		<description>Synthesizes an Abyssal Pearl using refined Deep Blue and Abyss Steel as catalysts.</description>
+		<jobString>Synthesizing Abyssal Pearl.</jobString>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>1000</workAmount>
+		<recipeUsers>
+			<li>Moyo2_ArcFurnace</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_Abyssteel</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_BlueSerum</li>
+					</thingDefs>
+				</filter>
+				<count>40</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo2_Abyssteel</li>
+				<li>Moyo2_BlueSerum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MoyoLA_AbyssPearl>25</MoyoLA_AbyssPearl>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+	<RecipeDef>
+		<defName>MoyoLA_Make_AbyssPearl_Bulk</defName>
+		<label>Synthesizes Abyssal Pearl x4</label>
+		<description>Synthesizes an Abyssal Pearl using refined Deep Blue and Abyss Steel as catalysts.</description>
+		<jobString>Synthesizing Abyssal Pearl.</jobString>
+		<workSpeedStat>SmeltingSpeed</workSpeedStat>
+		<effectWorking>Smelt</effectWorking>
+		<soundWorking>Recipe_Smelt</soundWorking>
+		<workAmount>1000</workAmount>
+		<recipeUsers>
+			<li>Moyo2_ArcFurnace</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_Abyssteel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Moyo2_BlueSerum</li>
+					</thingDefs>
+				</filter>
+				<count>160</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Moyo2_Abyssteel</li>
+				<li>Moyo2_BlueSerum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<MoyoLA_AbyssPearl>100</MoyoLA_AbyssPearl>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>

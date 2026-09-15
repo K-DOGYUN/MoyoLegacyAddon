@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<!-- 어비설 펄 합성 -->
+	<MoyoLA_Make_AbyssPearl.label>어비설 펄 합성</MoyoLA_Make_AbyssPearl.label>
+	<MoyoLA_Make_AbyssPearl.description>정제한 딥블루와 어비스틸을 촉매로 어비설 펄을 합성합니다.</MoyoLA_Make_AbyssPearl.description>
+	<MoyoLA_Make_AbyssPearl.jobString>어비설 펄 합성중.</MoyoLA_Make_AbyssPearl.jobString> 
+	<!-- 어비설 펄 대량 합성 -->
+	<MoyoLA_Make_AbyssPearl_Bulk.label>어비설 펄 합성 x4</MoyoLA_Make_AbyssPearl_Bulk.label>
+	<MoyoLA_Make_AbyssPearl_Bulk.description>정제한 딥블루와 어비스틸을 촉매로 어비설 펄을 합성합니다.</MoyoLA_Make_AbyssPearl_Bulk.description>
+	<MoyoLA_Make_AbyssPearl_Bulk.jobString>어비설 펄 합성중.</MoyoLA_Make_AbyssPearl_Bulk.jobString> 
+	<!-- 소형 어비설 펄 조각상 제작 -->
+	<MoyoLA_SculptPearlSculptureSmall.label>소형 어비설 펄 조각상 제작</MoyoLA_SculptPearlSculptureSmall.label>
+	<MoyoLA_SculptPearlSculptureSmall.description>소형 어비설 펄 조각상 제작합니다.</MoyoLA_SculptPearlSculptureSmall.description>
+	<MoyoLA_SculptPearlSculptureSmall.jobString>소형 어비설 펄 조각상 제작중.</MoyoLA_SculptPearlSculptureSmall.jobString> 
+	<!-- 대형 어비설 펄 조각상 제작 -->
+	<MoyoLA_SculptPearlSculptureLarge.label>대형 어비설 펄 조각상 제작</MoyoLA_SculptPearlSculptureLarge.label>
+	<MoyoLA_SculptPearlSculptureLarge.description>대형 어비설 펄 조각상 제작합니다.</MoyoLA_SculptPearlSculptureLarge.description>
+	<MoyoLA_SculptPearlSculptureLarge.jobString>대형 어비설 펄 조각상 제작중.</MoyoLA_SculptPearlSculptureLarge.jobString> 
+	<!-- 초대형 어비설 펄 조각상 제작 -->
+	<MoyoLA_SculptPearlSculptureGrand.label>초대형 어비설 펄 조각상 제작</MoyoLA_SculptPearlSculptureGrand.label>
+	<MoyoLA_SculptPearlSculptureGrand.description>초대형 어비설 펄 조각상 제작합니다.</MoyoLA_SculptPearlSculptureGrand.description>
+	<MoyoLA_SculptPearlSculptureGrand.jobString>초대형 어비설 펄 조각상 제작중.</MoyoLA_SculptPearlSculptureGrand.jobString>
+</LanguageData>

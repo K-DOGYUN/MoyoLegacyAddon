@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- 어비스펄 조각상 제작법 베이스 -->
+	<RecipeDef Name="SculptPearlSculptureBase" Abstract="True">
+		<workSkill>Artistic</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Sculpt</effectWorking>
+		<soundWorking>Recipe_Sculpt</soundWorking>
+		<unfinishedThingDef>UnfinishedSculpture</unfinishedThingDef>
+		<recipeUsers>
+			<li>TableSculpting</li>
+		</recipeUsers>
+	</RecipeDef>
+	
+	<!-- 소형 어비스펄 조각상 제작법 -->
+	<RecipeDef ParentName="SculptPearlSculptureBase">
+		<defName>MoyoLA_SculptPearlSculptureSmall</defName>
+		<label>Sculpt small Abyssal Pearl sculpture</label>
+		<description>Sculpt small Abyssal Pearl sculpture</description>
+		<jobString>Sculpting small Abyssal Pearl sculpture.</jobString>
+		<workAmount>18000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MoyoLA_AbyssPearl</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+		</ingredients>
+		<products>
+			<MoyoLA_PearlSculptureSmall>1</MoyoLA_PearlSculptureSmall>
+		</products>
+		<skillRequirements>
+			<Artistic>0</Artistic>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<!-- 대형 어비스펄 조각상 제작법 -->
+	<RecipeDef ParentName="SculptPearlSculptureBase">
+		<defName>MoyoLA_SculptPearlSculptureLarge</defName>
+		<label>Sculpt large Abyssal Pearl sculpture</label>
+		<description>Sculpt large Abyssal Pearl sculpture</description>
+		<jobString>Sculpting large Abyssal Pearl sculpture.</jobString>
+		<workAmount>30000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MoyoLA_AbyssPearl</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+		</ingredients>
+		<products>
+			<MoyoLA_PearlSculptureLarge>1</MoyoLA_PearlSculptureLarge>
+		</products>
+		<skillRequirements>
+			<Artistic>0</Artistic>
+		</skillRequirements>
+	</RecipeDef>
+	
+	<!-- 초대형 어비스펄 조각상 제작법 -->
+	<RecipeDef ParentName="SculptPearlSculptureBase">
+		<defName>MoyoLA_SculptPearlSculptureGrand</defName>
+		<label>Sculpt grand Abyssal Pearl sculpture</label>
+		<description>Sculpt grand Abyssal Pearl sculpture</description>
+		<jobString>Sculpting grand Abyssal Pearl sculpture.</jobString>
+		<workAmount>105000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MoyoLA_AbyssPearl</li>
+					</thingDefs>
+				</filter>
+				<count>400</count>
+			</li>
+		</ingredients>
+		<products>
+			<MoyoLA_PearlSculptureGrand>1</MoyoLA_PearlSculptureGrand>
+		</products>
+		<skillRequirements>
+			<Artistic>0</Artistic>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<!-- 어비스펄 조각상 베이스 -->
+	<ThingDef Name="PearlSculptureBase" ParentName="ArtBuildingBase" Abstract="True">
+		<rotatable>true</rotatable>
+	    <comps Inherit="False">
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Styleable" />
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Artistic</li>
+          			<li>Morbid</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_Quality">
+						<curve>
+							<points>
+								<li>(0,0.12)</li> <!-- awful -->
+								<li>(1,0.16)</li> <!-- poor -->
+								<li>(2,0.20)</li> <!-- normal -->
+								<li>(3,0.22)</li> <!-- good -->
+								<li>(4,0.24)</li> <!-- excellent -->
+								<li>(5,0.26)</li> <!-- masterwork -->
+								<li>(6,0.28)</li> <!-- legendary -->
+							</points>
+						</curve>
+					</li>
+					<li Class="FocusStrengthOffset_BuildingDefsWithQuality">
+						<defs>
+							<li>SculptureSmall</li>
+							<li>SculptureLarge</li>
+							<li>SculptureGrand</li>
+						</defs>
+						<radius>9.9</radius>
+						<maxBuildings>8</maxBuildings>
+						<focusPerQuality>
+							<points>
+								<li>(0,0.0)</li> <!-- awful -->
+								<li>(1,0.0)</li> <!-- poor -->
+								<li>(2,0.01)</li> <!-- normal -->
+								<li>(3,0.01)</li> <!-- good -->
+								<li>(4,0.01)</li> <!-- excellent -->
+								<li>(5,0.02)</li> <!-- masterwork -->
+								<li>(6,0.02)</li> <!-- legendary -->
+							</points>
+						</focusPerQuality>
+						<explanationKey>MeditationFocusPerSculpture</explanationKey>
+						<explanationKeyAbstract>MeditationFocusPerSculptureAbstract
+						</explanationKeyAbstract>
+					</li>
+				</offsets>
+			</li>
+	      	<li Class="CompProperties_Art">
+	        	<nameMaker>NamerArtSculpture</nameMaker>
+	        	<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+	        	<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+	      	</li>
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+    	<thingCategories>
+      		<li>BuildingsArt</li>
+    	</thingCategories>
+    	<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    	<statBases>
+      		<SellPriceFactor>1.10</SellPriceFactor>
+    	</statBases>
+    	<placeWorkers>
+      		<li>PlaceWorker_MeditationOffsetBuildingsNear</li>
+    	</placeWorkers>
+    	<tradeTags>
+      		<li>Art</li>
+    	</tradeTags>
+	    <ideoBuildingNamerBase MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoSculpture</ideoBuildingNamerBase>
+	    <building>
+	      	<paintable>true</paintable>
+	    </building>
+	</ThingDef>
+	
+	<!-- 소형 어비스펄 조각상 -->
+	<ThingDef ParentName="PearlSculptureBase">
+		<defName>MoyoLA_PearlSculptureSmall</defName>
+		<label>small abyssal pearl sculpture</label>
+		<description>A torso-sized piece of abyssal pearl sculpted into an artistic form. its design is based on natural crystaline structure of the material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Buildings/Art/PearlSculptureSmall</texPath>
+		</graphicData>
+	    <statBases>
+	    	<MaxHitPoints>90</MaxHitPoints>
+	    	<Mass>3</Mass>
+	    	<Beauty>330</Beauty>
+	    	<WorkToMake>18000</WorkToMake>
+	      	<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">10</StyleDominance>
+	    </statBases>
+	</ThingDef>
+	
+	<!-- 대형 어비스펄 조각상 -->
+	<ThingDef ParentName="PearlSculptureBase">
+		<defName>MoyoLA_PearlSculptureLarge</defName>
+		<label>large abyssal pearl sculpture</label>
+		<description>A person-sized piece of abyssal pearl sculpted into an artistic form. its design is based on natural crystaline structure of the material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Buildings/Art/PearlSculptureLarge</texPath>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+	    <statBases>
+		    <MaxHitPoints>150</MaxHitPoints>
+		    <Mass>7</Mass>
+		    <Beauty>630</Beauty>
+		    <WorkToMake>30000</WorkToMake>
+		    <StyleDominance MayRequire="Ludeon.RimWorld.Ideology">20</StyleDominance>
+	    </statBases>
+	</ThingDef>
+	
+	<!-- 초대형 어비스펄 조각상 -->
+	<ThingDef ParentName="PearlSculptureBase">
+		<defName>MoyoLA_PearlSculptureGrand</defName>
+		<label>grand abyssal pearl sculpture</label>
+		<description>A huge sculpture made with abyssal pearl, sized to dominate a room. its design is based on natural crystaline structure of the material.</description>
+		<graphicData>
+			<graphicClass>Graphic_Random</graphicClass>
+			<texPath>Buildings/Art/PearlSculptureGrand</texPath>
+			<drawSize>(4,4)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+	    <statBases>
+	      	<MaxHitPoints>300</MaxHitPoints>
+	      	<Beauty>2430</Beauty>
+	      	<Mass>28</Mass>
+	      	<WorkToMake>105000</WorkToMake>
+	      	<StyleDominance MayRequire="Ludeon.RimWorld.Ideology">40</StyleDominance>
+	    </statBases>
+	</ThingDef>
+</Defs>

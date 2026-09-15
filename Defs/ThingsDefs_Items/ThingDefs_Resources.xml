@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>MoyoLA_AbyssPearl</defName>
+		<label>abyssal pearl</label>
+		<description>A cerulian crystal of pure deepblue. Its effects have been more potent as it got purer, thus used for crafting items with extreme effects,\nIts Peculiar glint is considered to be a wonder, which makes it craved even by moyos. A literal cost of blood to satisfy the endless greed.</description>
+		<graphicData>
+			<texPath>Items/AbyssPearl</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<soundInteract>Silver_Drop</soundInteract>
+		<soundDrop>Silver_Drop</soundDrop>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>15</MarketValue>
+			<RoyalFavorValue>0.020</RoyalFavorValue>
+			<Mass>0.005</Mass>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<StuffPower_Armor_Sharp>1.0</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.3</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>0.2</StuffPower_Armor_Heat>
+			<SharpDamageMultiplier>1.0</SharpDamageMultiplier>
+			<BluntDamageMultiplier>0.5</BluntDamageMultiplier>
+	    </statBases>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
+		<stackLimit>500</stackLimit>
+		<smallVolume>true</smallVolume>
+		<burnableByRecipe>false</burnableByRecipe>
+		<smeltable>false</smeltable>
+	    <stuffProps>
+			<stuffAdjective>abyssal</stuffAdjective>
+			<categories>
+	        	<li>Stony</li>
+			</categories>
+			<appearance>Metal</appearance>
+			<commonality>0.02</commonality>
+			<isAirtight>false</isAirtight>
+			<color>(10,10,180)</color>
+			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Metal</soundImpactMelee>
+			<statOffsets>
+				<Beauty>30</Beauty>
+			</statOffsets>
+			<statFactors>
+		        <MaxHitPoints>0.3</MaxHitPoints>
+		        <Flammability>0.0</Flammability>
+		        <Beauty>6</Beauty>
+		        <WorkToMake>1.5</WorkToMake>
+		        <WorkToBuild>1.5</WorkToBuild>
+		        <MeleeWeapon_CooldownMultiplier>1.0</MeleeWeapon_CooldownMultiplier>
+			</statFactors>
+	    </stuffProps>
+	</ThingDef>	
+</Defs>
