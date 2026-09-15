@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- High life -->
+
+  <DesignatorDropdownGroupDef>
+    <defName>MoyoLA_AbyssPearlFloor</defName>
+    <label>abyssal pearl tile</label>
+    <iconSource>Placed</iconSource>
+  </DesignatorDropdownGroupDef>
+
+  <TerrainDef Name="MoyoLA_AbyssPearlFloorBase" ParentName="FloorBase" Abstract="True">
+    <defName>MoyoLA_AbyssPearlFloorBase</defName>
+    <label>abyssal pearl tile</label>
+    <description>High-quality metal tile made from Abyss Steel and Abyssal Pearl. It improves cleanliness and beauty.</description>
+    <designatorDropdown>MoyoLA_AbyssPearlFloor</designatorDropdown>
+    <costList>
+      <Moyo2_Abyssteel>5</Moyo2_Abyssteel>
+      <MoyoLA_AbyssPearl>1</MoyoLA_AbyssPearl>
+    </costList>
+    <statBases>
+      <Beauty>5</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="MoyoLA_AbyssPearlFloorBase">
+    <defName>MoyoLA_AbyssPearlFloorA</defName>
+    <label>abyssal pearl tile A</label>
+    <texturePath>Terrain/Surfaces/AbyssPearlTileA</texturePath>
+  </TerrainDef>
+
+  <TerrainDef ParentName="MoyoLA_AbyssPearlFloorBase">
+    <defName>MoyoLA_AbyssPearlFloorB</defName>
+    <label>abyssal pearl tile B</label>
+    <texturePath>Terrain/Surfaces/AbyssPearlTileB</texturePath>
+  </TerrainDef>
+
+  <TerrainDef ParentName="MoyoLA_AbyssPearlFloorBase">
+    <defName>MoyoLA_AbyssPearlFloorC</defName>
+    <label>abyssal pearl tile C</label>
+    <texturePath>Terrain/Surfaces/AbyssPearlTileC</texturePath>
+  </TerrainDef>
+
+  <TerrainDef ParentName="MoyoLA_AbyssPearlFloorBase">
+    <defName>MoyoLA_AbyssPearlFloorD</defName>
+    <label>abyssal pearl tile D</label>
+    <texturePath>Terrain/Surfaces/AbyssPearlTileD</texturePath>
+  </TerrainDef>
+
+</Defs>

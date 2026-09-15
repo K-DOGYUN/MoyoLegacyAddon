@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Rediscovered Abyssal Pearl Sculpture</name>
+	<name>Rediscovered Abyssal Pearl</name>
 	<author>RP01</author>
 	<packageId>Nemonian.MY2.MoyoLegacyAddon</packageId>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<description>This add-on for Moyo 2.0 brings back the statues from Moyo 1.0, along with Abyssal Pearls, the material used to craft them.</description>
+	<description>This add-on for Moyo 2.0 restores Abyssal Pearls and the sculptures crafted from them, and adds luxurious Abyssal Pearl tiles.</description>
 	<modDependencies>
 		<li>
 			<packageId>Nemonian.MY2</packageId>
