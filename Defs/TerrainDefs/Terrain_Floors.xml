@@ -16,11 +16,12 @@
     <designatorDropdown>MoyoLA_AbyssPearlFloor</designatorDropdown>
     <costList>
       <Moyo2_Abyssteel>5</Moyo2_Abyssteel>
-      <MoyoLA_AbyssPearl>1</MoyoLA_AbyssPearl>
+      <MoyoLA_AbyssPearl>5</MoyoLA_AbyssPearl>
     </costList>
     <statBases>
       <Beauty>5</Beauty>
       <Cleanliness>0.2</Cleanliness>
+      <WorkToMake>500</WorkToMake>
     </statBases>
     <tags>
       <li>FineFloor</li>
