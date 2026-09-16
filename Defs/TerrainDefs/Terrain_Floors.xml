@@ -13,7 +13,7 @@
     <defName>MoyoLA_AbyssPearlFloorBase</defName>
     <label>abyssal pearl tile</label>
     <description>High-quality metal tile made from Abyss Steel and Abyssal Pearl. It improves cleanliness and beauty.</description>
-    <edgeType>Hard</edgeType>
+    <renderPrecedence>240</renderPrecedence>
     <designatorDropdown>MoyoLA_AbyssPearlFloor</designatorDropdown>
     <costList>
       <Moyo2_Abyssteel>5</Moyo2_Abyssteel>
