@@ -21,7 +21,7 @@
     <statBases>
       <Beauty>5</Beauty>
       <Cleanliness>0.2</Cleanliness>
-      <WorkToMake>500</WorkToMake>
+      <WorkToBuild>800</WorkToBuild>
     </statBases>
     <tags>
       <li>FineFloor</li>
